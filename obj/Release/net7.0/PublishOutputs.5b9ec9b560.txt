@@ -1,7 +1,0 @@
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\MyFirstAzureWebApp.exe
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\appsettings.Development.json
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\appsettings.json
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\MyFirstAzureWebApp.dll
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\MyFirstAzureWebApp.deps.json
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\MyFirstAzureWebApp.runtimeconfig.json
-F:\azuredemo\test7\MyFirstAzureWebApp\bin\Release\net7.0\publish\MyFirstAzureWebApp.pdb

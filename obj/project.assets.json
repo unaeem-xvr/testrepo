@@ -1,11 +1,23 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net6.0": [
+      "AutoMapper >= 11.0.1",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "BCrypt.Net-Next >= 4.0.2",
+      "MailKit >= 3.1.1",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.2",
+      "Microsoft.EntityFrameworkCore.Design >= 6.0.2",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.25",
+      "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.2",
+      "ServiceStack.Interfaces >= 8.0.0",
+      "Swashbuckle.AspNetCore >= 6.2.3",
+      "System.IdentityModel.Tokens.Jwt >= 6.16.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\unaeem\\.nuget\\packages\\": {}
@@ -13,21 +25,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\azuredemo\\test7\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
-      "projectName": "MyFirstAzureWebApp",
-      "projectPath": "F:\\azuredemo\\test7\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+      "projectUniqueName": "F:\\azuredemo\\mvp2\\mvp2-gait-360-be\\WebApi.csproj",
+      "projectName": "WebApi",
+      "projectPath": "F:\\azuredemo\\mvp2\\mvp2-gait-360-be\\WebApi.csproj",
       "packagesPath": "C:\\Users\\unaeem\\.nuget\\packages\\",
-      "outputPath": "F:\\azuredemo\\test7\\MyFirstAzureWebApp\\obj\\",
+      "outputPath": "F:\\azuredemo\\mvp2\\mvp2-gait-360-be\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\unaeem\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -38,8 +50,56 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[11.0.1, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[11.0.0, )"
+          },
+          "BCrypt.Net-Next": {
+            "target": "Package",
+            "version": "[4.0.2, )"
+          },
+          "MailKit": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[6.0.25, )"
+          },
+          "Microsoft.EntityFrameworkCore.Sqlite": {
+            "target": "Package",
+            "version": "[6.0.2, )"
+          },
+          "ServiceStack.Interfaces": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[6.2.3, )"
+          },
+          "System.IdentityModel.Tokens.Jwt": {
+            "target": "Package",
+            "version": "[6.16.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -59,8 +119,109 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'AutoMapper (>= 11.0.1)' for 'net6.0'.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'AutoMapper.Extensions.Microsoft.DependencyInjection (>= 11.0.0)' for 'net6.0'.",
+      "libraryId": "AutoMapper.Extensions.Microsoft.DependencyInjection",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'BCrypt.Net-Next (>= 4.0.2)' for 'net6.0'.",
+      "libraryId": "BCrypt.Net-Next",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'MailKit (>= 3.1.1)' for 'net6.0'.",
+      "libraryId": "MailKit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.Authentication.JwtBearer (>= 6.0.2)' for 'net6.0'.",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.EntityFrameworkCore.Design (>= 6.0.2)' for 'net6.0'.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.EntityFrameworkCore.Sqlite (>= 6.0.2)' for 'net6.0'.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Sqlite",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.EntityFrameworkCore.SqlServer (>= 6.0.25)' for 'net6.0'.",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'ServiceStack.Interfaces (>= 8.0.0)' for 'net6.0'.",
+      "libraryId": "ServiceStack.Interfaces",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Swashbuckle.AspNetCore (>= 6.2.3)' for 'net6.0'.",
+      "libraryId": "Swashbuckle.AspNetCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'System.IdentityModel.Tokens.Jwt (>= 6.16.0)' for 'net6.0'.",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
