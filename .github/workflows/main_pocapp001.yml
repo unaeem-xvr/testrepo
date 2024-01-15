@@ -48,15 +48,15 @@ jobs:
 
       - name: Check Commit Message for Deployment
         run: |
-          commit_message=$(git log --format=%B -n 1 $GITHUB_SHA)
-          echo "Commit Message: $commit_message"
+          $commitMessage = git log --format=%B -n 1 $env:GITHUB_SHA
+          Write-Host "Commit Message: $commitMessage"
           
-          if [[ $commit_message == *"deploy"* ]]; then
-            echo "Deploy triggered by commit message."
-          else
-            echo "No deployment triggered by commit message. Skipping deployment."
+          if ($commitMessage -like '*deploy*') {
+            Write-Host "Deploy triggered by commit message."
+          } else {
+            Write-Host "No deployment triggered by commit message. Skipping deployment."
             exit 0
-          fi
+          }
 
       - name: Login to Azure
         uses: azure/login@v1
